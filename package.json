@@ -1,0 +1,25 @@
+{
+  "name": "whale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp default",
+    "scss": "compass watch",
+    "build": "gulp release"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp-changed": "^3.1.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-freemarker": "^0.1.5",
+    "gulp-replace": "^0.6.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! ">
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/">
+    <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/base/1.2.0/css/base.css">
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/platform/bizCredit/1.0.0/css/creditBase.css">
+	<script src="//static.360buyimg.com/finance/common/lib/jquery/1.8.3/jquery.js"></script>
+    <script src="/static/js/jquery.datetimepicker.full.js"></script>
+    <script type="text/javascript" src="/static/js/template.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/js/creditTool.js" charset="utf-8"></script>
+	 <script src="/static/js/base.js"></script>
+	<script src="//static.360buyimg.com/finance/base/biz/1.0.0/js/base.js"></script>
+	<script src="//static.360buyimg.com/finance/??common/lib/raphael/2.1.2/raphael.js"></script>
+	<script src="/static/js/proToolsCircle.js"></script>
+    <script type="text/javascript">
+        var contextPath='/static';
+    </script>
+        <link rel="stylesheet" href="/static/css/wen.css" />
+</head>
+<body>
+    <div class="common-body-container" id="insight_table_page">
+<script type="text/javascript" src="/static/js/header.js" charset="utf-8"></script>
+<div class="header-area shadow-header">
+    <div class="header-main w clearfix">
+        <div class="logo-box">
+        	<a href="/static/index" class="back-homePage">
+            	<span class="jdjr-logo"></span>
+            </a>
+        </div>
+        <div class="header-nav">
+            <ul class="clearfix index">
+                <!-- 头部菜单begin -->
+                <li id="index"  class="nav-list">
+                    <a href="/static/index" class="nav-text">首页</a>
+                </li>
+                <li id="service" class="nav-list ">
+                    <a href="/static/service/todo?type=CREDIT_SERVICE" target="navTab" class="nav-text">信用服务</a>
+                </li>
+                <li id="data" class="nav-list ">
+                    <a href="/static/service/todo?type=DATA_SERVICE" target="navTab" class="nav-text">数据服务</a>
+                </li>
+                <li id="featured" class="nav-list ">
+                    <a href="javascript:;" class="nav-text">特色产品</a>
+                    <div class="sub-pro-link">
+                        <span>特色产品</span>
+                        <ul class="sub-nav-ul">
+                            <li class="sub-nav-list ">
+                                <a href="/static/user/vipcenter/todo" target="navTab">蓝鲸灵</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/user/mini/todo" target="navTab">Mini尽调</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/opinion/todo" target="navTab">企业舆情</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/graph/todo" target="navTab">企业图谱</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="report" class="nav-list ">
+                    <a  href="/static/report/todo"  target="navTab" class="nav-text">信用报告</a>
+                </li>
+                <li id="shop" class="nav-list ">
+                    <a  href="/static/shop" class="nav-text">模型商城</a>
+                </li>
+                <li id="help" class="nav-list ">
+                    <a  href="/static/help/center" class="nav-text">帮助中心</a>
+                </li>
+                <!-- 头部菜单end -->
+
+                <li class="nav-list">
+                    <div class="login-area">
+                        <div class="not-login" >
+                            <a target="_blank" href="javascript:;" id="login-credit">登录</a><i class="line"></i><a target="_blank" href="https://biz.jd.com/register/toEnterpriseRegister.do">注册</a>
+                        </div>
+                        <div class="had-login" style="display:none;">
+                            <div class="user-pic-area">
+                                <img src="//static.360buyimg.com/finance/platform/bizCredit/1.0.0/images/user-int.png" alt="">
+                    
+                                <div class="wrap"></div>
+                            </div>
+                            <div class="select-page-area">
+                                <ul class="select-page-ul">
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/index" >
+                                            <div class="cz-box"><i class="base-icon icon11"></i>用户中心</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/contract" >
+                                            <div class="cz-box"><i class="base-icon icon12"></i>合同管理</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/order" >
+                                            <div class="cz-box"><i class="base-icon icon13"></i>我的订单</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/product" >
+                                            <div class="cz-box"><i class="base-icon icon17"></i>产品购买中心</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/account" >
+                                            <div class="cz-box"><i class="base-icon icon15"></i>账号设置</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="//biz.jd.com/login/toLogout.do?return=https://icredit.jd.com/index">
+                                            <div class="cz-box"><i class="base-icon icon16"></i>退出</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+            <div class="products-server-center clearfix">
+<div class="pro-server-left">
+    <div class="lists-box">
+        <h3 class="buy-pro-head open">
+            <span class="h-name ls0">蓝鲸交易征信</span>
+        </h3>
+        <div class="move-box">
+            <ul class="buy-ul">
+                <li class="buy-list">
+                    <a href="/welink/analysis/index">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-qyfx"></i>
+                        </span>
+                        <span>企业分析</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/reliability">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-kxd"></i>
+                        </span>
+                        <span>数据可信度</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/indicator">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-zb"></i>
+                        </span>
+                        <span>经营指标</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/risk">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-yj"></i>
+                        </span>
+                        <span>风控预警</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>                    <div class="pro-server-right">
+                        <div class="server-infor-box">
+                            <div class="server-infor-con">
+                                <div class="server-search-area">
+                                    <div class="sample-title no-bottom clearfix">
+                                        <h2>
+                                            <a href="" class="back-title">企业分析&nbsp;/</a>
+                                            <a href="" class="back-title">&nbsp;总览&nbsp;/</a>
+                                            <a href="" class="back-title">&nbsp;业务洞察&nbsp;/</a>&nbsp;财务分析</h2>
+                                    </div>
+                                    <div class="select-list-box">
+                                        <div class="select-ul clearfix">
+                                            <a href="javascript:;" class="select-title-list clearfix choose-item">资产负债表
+                                                <i class="cut-line"></i>
+                                            </a>
+                                            <a href="javascript:;" class="select-title-list clearfix">利润表
+                                                <i class="cut-line"></i>
+                                            </a>
+                                            <a href="javascript:;" class="select-title-list clearfix">现金流量表</a>
+                                        </div>
+                                        <div class="select-line-area">
+                                            <div class="select-line" style="left: 0px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="index-table-area">
+                                        <div class="index-analysis-table" style="display: block">
+                                            <div class="table-head-box clearfix">
+                                                <div class="select-box w100-select h30-select fl mt20">
+                                                    <div class="consignee-infor">
+                                                        <div class="show-consignee-infor show-title">
+                                                            <p>2017年8月</p>
+                                                        </div>
+                                                        <div class="hide-consignee-infor" style="display: none;">
+                                                            <div class="consignee-title show-title">
+                                                                <p>2017年8月</p>
+                                                            </div>
+                                                            <i class="arrow arrow-up"></i>
+                                                            <ul>
+                                                                <li class="ad-list">
+                                                                    <p>2017年8月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年7月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年6月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年5月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年4月</p>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <i class="arrow arrow-down"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="visualization-curr mt20 clearfix">
+                                                    <span class="left curr">月度报表</span>
+                                                    <span class="right">年度报表</span>
+                                                </div>
+                                            </div>
+<div class="l-r-table-box clearfix" id="finance_table1">
+    <div class="table-box fl">
+        <table class="lengthwise-table mt15">
+            <colgroup>
+                <col width="" />
+                <col width="30%" />
+                <col width="30%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="pl20">资产</th>
+                    <th>期初</th>
+                    <th>期末</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="col-row">
+                    <td class="pl20">流动资产(合计)</td>
+                    <td>-</td>
+                    <td>6,535,701.60</td>
+                </tr>
+                <tr>
+                    <td class="pl20">货币资金</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="pl20">交易性金融资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收票据</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收账款</td>
+                    <td>-</td>
+                    <td>4,304,810.85</td>
+                </tr>
+                <tr>
+                    <td class="pl20">预付款项</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收利息</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收股利</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他应收款</td>
+                    <td>-</td>
+                    <td>949,286.11</td>
+                </tr>
+                <tr>
+                    <td class="pl20">存货</td>
+                    <td>-</td>
+                    <td>65,086.57</td>
+                </tr>
+                <tr>
+                    <td class="pl20">一年内到期的非流动资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他流动资产</td>
+                    <td>-</td>
+                    <td>43,119.87</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">固定资产(合计)</td>
+                    <td>-</td>
+                    <td>276,761.52</td>
+                </tr>
+                <tr>
+                    <td class="pl20">可供出售金融资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">持有至到期投资</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期应收款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期股权投资</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">投资性房地产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">固定资产</td>
+                    <td>-</td>
+                    <td>100,738.48</td>
+                </tr>
+                <tr>
+                    <td class="pl20">在建工程</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">工程物资</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">固定资产清理</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">生产性生物资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">油气资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">无形资产</td>
+                    <td>-</td>
+                    <td>176,023.04</td>
+                </tr>
+                <tr>
+                    <td class="pl20">开发支出</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">商誉</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期待摊费用资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">递延所得税资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他非流动资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">资产合计</td>
+                    <td>-</td>
+                    <td>6,812,463.12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-box fl ml20">
+        <table class="lengthwise-table mt15">
+            <colgroup>
+                <col width="" />
+                <col width="30%" />
+                <col width="30%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="pl20">负债</th>
+                    <th>期初</th>
+                    <th>期末</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="col-row">
+                    <td class="pl20">流动负债(合计)</td>
+                    <td>-</td>
+                    <td>6,088,302.40</td>
+                </tr>
+                <tr>
+                    <td class="pl20">短期借款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">交易性金融负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付票据</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付账款</td>
+                    <td>-</td>
+                    <td>4,927,766.29</td>
+                </tr>
+                <tr>
+                    <td class="pl20">预收款项</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付职工薪酬</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应交税费</td>
+                    <td>-</td>
+                    <td>123,407.18</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付利息</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付股利</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他应付款</td>
+                    <td>-</td>
+                    <td>951,771.96</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他流动负债</td>
+                    <td>-</td>
+                    <td>85,356.97</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">非流动负债(合计)</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期借款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付债券</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期应付款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">专项应付款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">预计负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">递延所得税负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他非流动负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">负债(合计)</td>
+                    <td>-</td>
+                    <td>6,088,302.40</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">所有者权益(合计)</td>
+                    <td>-</td>
+                    <td>724,160.72</td>
+                </tr>
+                <tr>
+                    <td class="pl20">实收资本（或股本）</td>
+                    <td>-</td>
+                    <td>3,573,165.26</td>
+                </tr>
+                <tr>
+                    <td class="pl20">资本公积</td>
+                    <td>-</td>
+                    <td>152.36</td>
+                </tr>
+                <tr>
+                    <td class="pl20">库存股</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">盈余公积</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">未分配利润</td>
+                    <td>-</td>
+                    <td>-2,849,156.90</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">负债和所有者权益总计</td>
+                    <td>-</td>
+                    <td>6,812,463.12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div><div class="l-r-table-box clearfix" id="finance_table2" style="display:none;">
+    <div class="table-box fl">
+        <table class="lengthwise-table mt15">
+            <colgroup>
+                <col width="" />
+                <col width="30%" />
+                <col width="30%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="pl20">资产</th>
+                    <th>期初</th>
+                    <th>期末</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="col-row">
+                    <td class="pl20">流动资产(合计)</td>
+                    <td>-</td>
+                    <td>53,520,712.24</td>
+                </tr>
+                <tr>
+                    <td class="pl20">货币资金</td>
+                    <td>-</td>
+                    <td>14,276,602.41</td>
+                </tr>
+                <tr>
+                    <td class="pl20">交易性金融资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收票据</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收账款</td>
+                    <td>-</td>
+                    <td>25,167,796.36</td>
+                </tr>
+                <tr>
+                    <td class="pl20">预付款项</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收利息</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应收股利</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他应收款</td>
+                    <td>-</td>
+                    <td>11,203,964.54</td>
+                </tr>
+                <tr>
+                    <td class="pl20">存货</td>
+                    <td>-</td>
+                    <td>2,367,570.30</td>
+                </tr>
+                <tr>
+                    <td class="pl20">一年内到期的非流动资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他流动资产</td>
+                    <td>-</td>
+                    <td>504,778.63</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">固定资产(合计)</td>
+                    <td>-</td>
+                    <td>3,454,267.30</td>
+                </tr>
+                <tr>
+                    <td class="pl20">可供出售金融资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">持有至到期投资</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期应收款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期股权投资</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">投资性房地产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">固定资产</td>
+                    <td>-</td>
+                    <td>1,243,829.36</td>
+                </tr>
+                <tr>
+                    <td class="pl20">在建工程</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">工程物资</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">固定资产清理</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">生产性生物资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">油气资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">无形资产</td>
+                    <td>-</td>
+                    <td>1,893,077.94</td>
+                </tr>
+                <tr>
+                    <td class="pl20">开发支出</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">商誉</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期待摊费用资产</td>
+                    <td>-</td>
+                    <td>317,360.00	</td>
+                </tr>
+                <tr>
+                    <td class="pl20">递延所得税资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他非流动资产</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">资产合计</td>
+                    <td>-</td>
+                    <td>56,974,979.54</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-box fl ml20">
+        <table class="lengthwise-table mt15">
+            <colgroup>
+                <col width="" />
+                <col width="30%" />
+                <col width="30%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="pl20">负债</th>
+                    <th>期初</th>
+                    <th>期末</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="col-row">
+                    <td class="pl20">流动负债(合计)</td>
+                    <td>-</td>
+                    <td>59,775,617.88</td>
+                </tr>
+                <tr>
+                    <td class="pl20">短期借款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">交易性金融负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付票据</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付账款</td>
+                    <td>-</td>
+                    <td>37,843,521.68</td>
+                </tr>
+                <tr>
+                    <td class="pl20">预收款项</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付职工薪酬</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应交税费</td>
+                    <td>-</td>
+                    <td>-236,231.41</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付利息</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付股利</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他应付款</td>
+                    <td>-</td>
+                    <td>21,324,175.86</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他流动负债</td>
+                    <td>-</td>
+                    <td>844,151.75</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">非流动负债(合计)</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期借款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">应付债券</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">长期应付款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">专项应付款</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">预计负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">递延所得税负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">其他非流动负债</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">负债(合计)</td>
+                    <td>-</td>
+                    <td>59,775,617.88</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">所有者权益(合计)</td>
+                    <td>-</td>
+                    <td>-2,800,638.34</td>
+                </tr>
+                <tr>
+                    <td class="pl20">实收资本（或股本）</td>
+                    <td>-</td>
+                    <td>42,877,983.12</td>
+                </tr>
+                <tr>
+                    <td class="pl20">资本公积</td>
+                    <td>-</td>
+                    <td>1,828.32</td>
+                </tr>
+                <tr>
+                    <td class="pl20">库存股</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">盈余公积</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="pl20">未分配利润</td>
+                    <td>-</td>
+                    <td>-45,680,449.78</td>
+                </tr>
+                <tr class="col-row">
+                    <td class="pl20">负债和所有者权益总计</td>
+                    <td>-</td>
+                    <td>56,974,979.54</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>                                        </div>
+
+                                        <div class="index-analysis-table">
+                                            <div class="table-head-box clearfix">
+                                                <div class="select-box w100-select h30-select fl mt20">
+                                                    <div class="consignee-infor">
+                                                        <div class="show-consignee-infor show-title">
+                                                            <p>2017年8月</p>
+                                                        </div>
+                                                        <div class="hide-consignee-infor" style="display: none;">
+                                                            <div class="consignee-title show-title">
+                                                                <p>2017年8月</p>
+                                                            </div>
+                                                            <i class="arrow arrow-up"></i>
+                                                            <ul>
+                                                                <li class="ad-list">
+                                                                    <p>2017年8月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年7月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年6月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年5月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年4月</p>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <i class="arrow arrow-down"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="visualization-curr mt20 clearfix">
+                                                    <span class="left curr">月度报表</span>
+                                                    <span class="right">年度报表</span>
+                                                </div>
+                                            </div>
+<table class="lengthwise-table no-border-table mt15">
+    <colgroup>
+        <col width="25%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="pl20">项目</th>
+            <th>本期金额</th>
+            <th>本期金额占比</th>
+            <th>累计金额</th>
+            <th>累计金额占比</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="col-row">
+            <td class="pl20">营业收入</td>
+            <td>1,217,563.71</td>
+            <td>100.00%</td>
+            <td>21,577,293.76</td>
+            <td>100.00%</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业成本</td>
+            <td>562,273.09</td>
+            <td>46.18%</td>
+            <td>11,602,247.01</td>
+            <td>53.77%</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业税金及附加</td>
+            <td>17,342.57</td>
+            <td>1.42%</td>
+            <td>216,336.41</td>
+            <td>1.00%</td>
+        </tr>
+        <tr>
+            <td class="pl20">销售费用</td>
+            <td>76,342.79</td>
+            <td>6.27%</td>
+            <td>16,134.61</td>
+            <td>0.07%</td>
+        </tr>
+        <tr>
+            <td class="pl20">管理费用</td>
+            <td>424,054.85</td>
+            <td>34.83%</td>
+            <td>14,064,764.11</td>
+            <td>65.18%</td>
+        </tr>
+        <tr>
+            <td class="pl20">财务费用</td>
+            <td>-2,588.83</td>
+            <td>-0.21%</td>
+            <td>-15,335.48</td>
+            <td>-0.07%</td>
+        </tr>
+        <tr>
+            <td class="pl20">资产减值损失</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-176,002.00</td>
+            <td>-0.82%</td>
+        </tr>
+        <tr>
+            <td class="pl20">公允价值变动收益</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="pl20">投资收益</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业利润</td>
+            <td>140,139.24</td>
+            <td>11.51</td>
+            <td>-4,130,850.90</td>
+            <td>-19.14</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业外收入</td>
+            <td>-</td>
+            <td>-</td>
+            <td>1,103,559.13</td>
+            <td>5.11%</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业外支出</td>
+            <td>-</td>
+            <td>-</td>
+            <td>587,460.84</td>
+            <td>2.72%</td>
+        </tr>
+        <tr>
+            <td class="pl20">利润总额</td>
+            <td>140,139.24</td>
+            <td>11.51%</td>
+            <td>-3,614,752.61</td>
+            <td>-16.75%</td>
+        </tr>
+        <tr>
+            <td class="pl20">所得税</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="pl20">净利润</td>
+            <td>140,139.24</td>
+            <td>11.51%</td>
+            <td>-3,614,752.61</td>
+            <td>-16.75%</td>
+        </tr>
+    </tbody>
+</table><table class="lengthwise-table no-border-table mt15" style="display:none;">
+    <colgroup>
+        <col width="" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="pl20">项目</th>
+            <th>2016(元)</th>
+            <th>2015(元)</th>
+            <th>2014(元)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="col-row">
+            <td class="pl20">营业收入</td>
+            <td>-</td>
+            <td>3,411,098.52</td>
+            <td>9,574,135.93</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业成本</td>
+            <td>-</td>
+            <td>1,875,067.30</td>
+            <td>5,317,091.74</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业税金及附加</td>
+            <td>-</td>
+            <td>62,374.79</td>
+            <td>58,942.59</td>
+        </tr>
+        <tr>
+            <td class="pl20">销售费用</td>
+            <td>-</td>
+            <td>104,830.03</td>
+            <td>-730,610.46</td>
+        </tr>
+        <tr>
+            <td class="pl20">管理费用</td>
+            <td>-</td>
+            <td>3,718,776.17</td>
+            <td>5,136,800.60</td>
+        </tr>
+        <tr>
+            <td class="pl20">财务费用</td>
+            <td>-</td>
+            <td>1,960.54</td>
+            <td>-15,228.43</td>
+        </tr>
+        <tr>
+            <td class="pl20">资产减值损失</td>
+            <td>-</td>
+            <td>-176,002.00</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="pl20">公允价值变动收益</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="pl20">投资收益</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业利润</td>
+            <td>-</td>
+            <td>-2,175,908.31</td>
+            <td>-192,860.11</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业外收入</td>
+            <td>-</td>
+            <td>7,049,530.08</td>
+            <td>587,460.84</td>
+        </tr>
+        <tr>
+            <td class="pl20">营业外支出</td>
+            <td>-</td>
+            <td>7,049,530.08</td>
+            <td>587,460.84</td>
+        </tr>
+        <tr>
+            <td class="pl20">利润总额</td>
+            <td>-</td>
+            <td>-2,175,908.31</td>
+            <td>-192,860.11</td>
+        </tr>
+        <tr>
+            <td class="pl20">所得税</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="pl20">净利润</td>
+            <td>-</td>
+            <td>-2,175,908.31</td>
+            <td>-192,860.11</td>
+        </tr>
+    </tbody>
+</table>                                        </div>
+
+                                        <div class="index-analysis-table">
+                                            <div class="table-head-box clearfix">
+                                                <div class="select-box w100-select h30-select fl mt20">
+                                                    <div class="consignee-infor">
+                                                        <div class="show-consignee-infor show-title">
+                                                            <p>2017年8月</p>
+                                                        </div>
+                                                        <div class="hide-consignee-infor" style="display: none;">
+                                                            <div class="consignee-title show-title">
+                                                                <p>2017年8月</p>
+                                                            </div>
+                                                            <i class="arrow arrow-up"></i>
+                                                            <ul>
+                                                                <li class="ad-list">
+                                                                    <p>2017年8月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年7月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年6月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年5月</p>
+                                                                </li>
+                                                                <li class="ad-list">
+                                                                    <p>2017年4月</p>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <i class="arrow arrow-down"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="scroll-table-box mt20 clearfix">
+                                                <div class="scroll-table-left">
+                                                    <div class="t-head">项目</div>
+                                                    <ul class="">
+                                                        <li class="clearfix">
+                                                            <div class="left">经营活动</div>
+                                                            <div class="right">
+                                                                <p>收入</p>
+                                                                <p>支出</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <div class="left">筹资活动</div>
+                                                            <div class="right">
+                                                                <p>收入</p>
+                                                                <p>支出</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <div class="left">投资活动</div>
+                                                            <div class="right">
+                                                                <p>收入</p>
+                                                                <p>支出</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="scroll-table-right more-table">
+                                                    <div class="scroll-table-left-border"></div>
+                                                    <div class="scroll-table-right-border"></div>
+                                                    <ul class="scroll-table-ul clearfix" id="scrollCon">
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">平均</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">1</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">2</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">3</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">4</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">5</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">6</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">7</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">8</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">9</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">10</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">11</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                        <li class="scroll-table-list">
+                                                            <div class="table-row table-row-head">12</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                            <div class="table-row">-</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cut-area"></div>
+            </div>
+            <div class="footer-fix"></div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/static/js/lib/echarts.min.js"></script>
+    <script src="/static/js/mock-min.js"></script>
+    <script src="/static/js/mock-data.js"></script>
+    <script src="/static/js/wenli.js"></script>
+</body>
+</html>

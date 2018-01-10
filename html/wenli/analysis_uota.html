@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! ">
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/">
+    <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/base/1.2.0/css/base.css">
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/platform/bizCredit/1.0.0/css/creditBase.css">
+	<script src="//static.360buyimg.com/finance/common/lib/jquery/1.8.3/jquery.js"></script>
+    <script src="/static/js/jquery.datetimepicker.full.js"></script>
+    <script type="text/javascript" src="/static/js/template.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/js/creditTool.js" charset="utf-8"></script>
+	 <script src="/static/js/base.js"></script>
+	<script src="//static.360buyimg.com/finance/base/biz/1.0.0/js/base.js"></script>
+	<script src="//static.360buyimg.com/finance/??common/lib/raphael/2.1.2/raphael.js"></script>
+	<script src="/static/js/proToolsCircle.js"></script>
+    <script type="text/javascript">
+        var contextPath='/static';
+    </script>
+        <link rel="stylesheet" href="/static/css/wen.css" />
+</head>
+<body>
+    <div class="common-body-container" id="insight_page">
+<script type="text/javascript" src="/static/js/header.js" charset="utf-8"></script>
+<div class="header-area shadow-header">
+    <div class="header-main w clearfix">
+        <div class="logo-box">
+        	<a href="/static/index" class="back-homePage">
+            	<span class="jdjr-logo"></span>
+            </a>
+        </div>
+        <div class="header-nav">
+            <ul class="clearfix index">
+                <!-- 头部菜单begin -->
+                <li id="index"  class="nav-list">
+                    <a href="/static/index" class="nav-text">首页</a>
+                </li>
+                <li id="service" class="nav-list ">
+                    <a href="/static/service/todo?type=CREDIT_SERVICE" target="navTab" class="nav-text">信用服务</a>
+                </li>
+                <li id="data" class="nav-list ">
+                    <a href="/static/service/todo?type=DATA_SERVICE" target="navTab" class="nav-text">数据服务</a>
+                </li>
+                <li id="featured" class="nav-list ">
+                    <a href="javascript:;" class="nav-text">特色产品</a>
+                    <div class="sub-pro-link">
+                        <span>特色产品</span>
+                        <ul class="sub-nav-ul">
+                            <li class="sub-nav-list ">
+                                <a href="/static/user/vipcenter/todo" target="navTab">蓝鲸灵</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/user/mini/todo" target="navTab">Mini尽调</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/opinion/todo" target="navTab">企业舆情</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/graph/todo" target="navTab">企业图谱</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="report" class="nav-list ">
+                    <a  href="/static/report/todo"  target="navTab" class="nav-text">信用报告</a>
+                </li>
+                <li id="shop" class="nav-list ">
+                    <a  href="/static/shop" class="nav-text">模型商城</a>
+                </li>
+                <li id="help" class="nav-list ">
+                    <a  href="/static/help/center" class="nav-text">帮助中心</a>
+                </li>
+                <!-- 头部菜单end -->
+
+                <li class="nav-list">
+                    <div class="login-area">
+                        <div class="not-login" >
+                            <a target="_blank" href="javascript:;" id="login-credit">登录</a><i class="line"></i><a target="_blank" href="https://biz.jd.com/register/toEnterpriseRegister.do">注册</a>
+                        </div>
+                        <div class="had-login" style="display:none;">
+                            <div class="user-pic-area">
+                                <img src="//static.360buyimg.com/finance/platform/bizCredit/1.0.0/images/user-int.png" alt="">
+                    
+                                <div class="wrap"></div>
+                            </div>
+                            <div class="select-page-area">
+                                <ul class="select-page-ul">
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/index" >
+                                            <div class="cz-box"><i class="base-icon icon11"></i>用户中心</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/contract" >
+                                            <div class="cz-box"><i class="base-icon icon12"></i>合同管理</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/order" >
+                                            <div class="cz-box"><i class="base-icon icon13"></i>我的订单</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/product" >
+                                            <div class="cz-box"><i class="base-icon icon17"></i>产品购买中心</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/account" >
+                                            <div class="cz-box"><i class="base-icon icon15"></i>账号设置</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="//biz.jd.com/login/toLogout.do?return=https://icredit.jd.com/index">
+                                            <div class="cz-box"><i class="base-icon icon16"></i>退出</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+            <div class="products-server-center clearfix">
+<div class="pro-server-left">
+    <div class="lists-box">
+        <h3 class="buy-pro-head open">
+            <span class="h-name ls0">蓝鲸交易征信</span>
+        </h3>
+        <div class="move-box">
+            <ul class="buy-ul">
+                <li class="buy-list">
+                    <a href="/welink/analysis/index">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-qyfx"></i>
+                        </span>
+                        <span>企业分析</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/reliability">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-kxd"></i>
+                        </span>
+                        <span>数据可信度</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/indicator">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-zb"></i>
+                        </span>
+                        <span>经营指标</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/risk">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-yj"></i>
+                        </span>
+                        <span>风控预警</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>                    <div class="pro-server-right">
+                        <div class="server-infor-con">
+                            <div class="server-search-area">
+                                <div class="sample-title no-bottom clearfix">
+                                    <h2>
+                                        <a href="/welink/analysis/index" class="back-title">企业分析&nbsp;/</a>
+                                        <a href="/welink/analysis/detail" class="back-title">&nbsp;总览&nbsp;/</a> 指标分析</h2>
+                                    <div class="sample-title-btn">
+                                        <div class="select-box w100-select h30-select">
+                                            <div class="consignee-infor">
+                                                <div class="show-consignee-infor show-title">
+                                                    <p>2017年8月</p>
+                                                </div>
+                                                <div class="hide-consignee-infor" style="display: none;">
+                                                    <div class="consignee-title show-title">
+                                                        <p>2017年8月</p>
+                                                    </div>
+                                                    <i class="arrow arrow-up"></i>
+                                                    <ul>
+                                                        <li class="ad-list">
+                                                            <p>2017年8月</p>
+                                                        </li>
+                                                        <li class="ad-list">
+                                                            <p>2017年7月</p>
+                                                        </li>
+                                                        <li class="ad-list">
+                                                            <p>2017年6月</p>
+                                                        </li>
+                                                        <li class="ad-list">
+                                                            <p>2017年5月</p>
+                                                        </li>
+                                                        <li class="ad-list">
+                                                            <p>2017年4月</p>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <i class="arrow arrow-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-list-box">
+                                    <div class="select-ul clearfix">
+                                        <a href="javascript:;" class="select-title-list clearfix choose-item">业务指标
+                                            <i class="cut-line"></i>
+                                        </a>
+                                        <a href="javascript:;" class="select-title-list clearfix">财务指标</a>
+                                    </div>
+                                    <div class="select-line-area">
+                                        <div class="select-line" style="left: 0px;"></div>
+                                    </div>
+                                </div>
+                                <div class="index-table-area">
+                                    <div class="index-analysis-table" style="display: block">
+                                        <table class="lengthwise-table no-border-table mt15">
+                                            <colgroup>
+                                                <col width="25%" />
+                                                <col width="20%" />
+                                                <col width="20%" />
+                                                <col width="20%" />
+                                                <col width="" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pl20">指标</th>
+                                                    <th>本期(2017-07)</th>
+                                                    <th>上期(2017-06)</th>
+                                                    <th>平均(近12个月)</th>
+                                                    <th>评级</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pl20">前5大供应商集中度(%)</td>
+                                                    <td>-</td>
+                                                    <td>82.62%</td>
+                                                    <td>87.49%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">前5大客户集中度(%)</td>
+                                                    <td>-</td>
+                                                    <td>100.00%</td>
+                                                    <td>100.00%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">库存周转率(次)</td>
+                                                    <td>-</td>
+                                                    <td>11.58%</td>
+                                                    <td>9.80%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">应付账款周转率(次)</td>
+                                                    <td>-</td>
+                                                    <td>0.04%</td>
+                                                    <td>0.00%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">应收账款周转率(次)</td>
+                                                    <td>-</td>
+                                                    <td>0.07%</td>
+                                                    <td>0.01%</td>
+                                                    <td>-</td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td class="pl20">毛利率(%)</td>
+                                                    <td>-</td>
+                                                    <td>-1,824.89%</td>
+                                                    <td>-1,824.89%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">采购退货率(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">销售退货率(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">库存余额同比增长(%)</td>
+                                                    <td>18.68%</td>
+                                                    <td>-28.21%</td>
+                                                    <td>-8.16%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-one">优秀</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">库存余额环比增长(%)</td>
+                                                    <td>43.43%</td>
+                                                    <td>-21.95%</td>
+                                                    <td>2.59%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-one">优秀</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="pl20">采购付款金额同比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">采购付款金额环比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">应付账款金额同比增长(%)</td>
+                                                    <td>16.21%</td>
+                                                    <td>66.80%</td>
+                                                    <td>37.85%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-two">良好</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">应付账款金额环比增长(%)</td>
+                                                    <td>-24.45%</td>
+                                                    <td>20.70%</td>
+                                                    <td>2.35%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">差</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">采购金额同比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>10,403.02%</td>
+                                                    <td>3,376.34%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">采购金额环比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>-24.27%</td>
+                                                    <td>466.07%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">销售收款金额同比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">销售收款金额环比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">应收账款金额同比增长(%)</td>
+                                                    <td>-56.89%</td>
+                                                    <td>-64.06%</td>
+                                                    <td>-34.62%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">一般</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">应收账款金额环比增长(%)</td>
+                                                    <td>10.43%</td>
+                                                    <td>-34.07%</td>
+                                                    <td>-0.57%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">一般</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="pl20">销售金额同比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">销售金额环比增长(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl20">销售采购比(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="index-analysis-table">
+                                        <table class="lengthwise-table no-border-table mt15">
+                                            <colgroup>
+                                                <col width="25%" />
+                                                <col width="20%" />
+                                                <col width="20%" />
+                                                <col width="20%" />
+                                                <col width="" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="pl20">指标</th>
+                                                    <th>本期(2017-07)</th>
+                                                    <th>上期(2017-06)</th>
+                                                    <th>平均 (近12个月)</th>
+                                                    <th>评级</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>成本费用占营业收入比重(%)</td>
+                                                    <td>79.14%</td>
+                                                    <td>90.10%</td>
+                                                    <td>93.67%</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00017">存货周转率(次)</td>
+                                                    <td>32.46%</td>
+                                                    <td>26.71%</td>
+                                                    <td>26.93%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">一般</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00016">总资产增长率(%)</td>
+                                                    <td>2.83%</td>
+                                                    <td>1.26%</td>
+                                                    <td>1.48%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-two">良好</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00015">销售(营业)利润增长率(%)</td>
+                                                    <td>148.06%</td>
+                                                    <td>35.75%</td>
+                                                    <td>-39.67%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-one">优秀</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00014">销售(营业)增长率(%)</td>
+                                                    <td>15.15%</td>
+                                                    <td>21.86%</td>
+                                                    <td>23.84%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">一般</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00013">带息负债比率(%)</td>
+                                                    <td>22.60%</td>
+                                                    <td>22.79%</td>
+                                                    <td>25.19%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">一般</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00012">现金流动负债比率(%)</td>
+                                                    <td>0.01%</td>
+                                                    <td>0.00%</td>
+                                                    <td>0.01%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-two">良好</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00011">速动比率(%)</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00010">资产负债率(%)</td>
+                                                    <td>89.28%</td>
+                                                    <td>91.03%</td>
+                                                    <td>94.01%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">较差</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00009">资产现金回收率(%)</td>
+                                                    <td>0.01%</td>
+                                                    <td>0.00%</td>
+                                                    <td>0.01%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-two">良好</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00008">流动资产周转率(次)</td>
+                                                    <td>0.16%</td>
+                                                    <td>0.14%</td>
+                                                    <td>0.13%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-two">良好</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00007">总资产周转率(次)</td>
+                                                    <td>0.12%</td>
+                                                    <td>0.11%</td>
+                                                    <td>0.09%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-two">良好</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00006">资本收益率(%)</td>
+                                                    <td>16.98%</td>
+                                                    <td>7.05%</td>
+                                                    <td>6.09%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-one">优秀</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00005">成本费用利润率(%)</td>
+                                                    <td>25.20%</td>
+                                                    <td>10.29%</td>
+                                                    <td>11.02%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-one">优秀</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00004">盈余现金保障倍数</td>
+                                                    <td>0.00%</td>
+                                                    <td>0.00%</td>
+                                                    <td>0.00%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-three">一般</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00003">销售(营业)利润率(%)</td>
+                                                    <td>19.97%</td>
+                                                    <td>9.27%</td>
+                                                    <td>5.87%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-one">优秀</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00002">总资产报酬率(%)</td>
+                                                    <td>2.40%</td>
+                                                    <td>0.99%</td>
+                                                    <td>0.94%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-one">优秀</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="FINI00001">净资产收益率(%)</td>
+                                                    <td>25.01%</td>
+                                                    <td>12.61%</td>
+                                                    <td>16.58%</td>
+                                                    <td>
+                                                        <span class="level-label label-col-two">良好</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cut-area"></div>
+            </div>
+            <div class="footer-fix"></div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/static/js/lib/echarts.min.js"></script>
+    <script src="/static/js/mock-min.js"></script>
+    <script src="/static/js/mock-data.js"></script>
+    <script src="/static/js/wenli.js"></script>
+</body>
+</html>

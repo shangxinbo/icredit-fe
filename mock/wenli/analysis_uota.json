@@ -1,0 +1,34 @@
+{
+    "file": "service/wenli/analysis_uota.ftl",
+    "data": {
+      "request":{
+        "contextPath":"/static"
+      },
+      "list": [
+        {
+          "isShow":false,
+          "name":"java"
+        },
+        {
+          "isShow":true,
+          "name":"c++"
+        },
+        {
+          "isShow":false,
+          "name":"perl"
+        },
+        {
+          "isShow":true,
+          "name":"C"
+        },
+        {
+          "isShow":false,
+          "name":"ruby"
+        },
+        {
+          "isShow":true,
+          "name":"python"
+        }
+      ]
+    }
+  }

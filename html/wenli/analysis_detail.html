@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="京东金融综合互联网理财服务，基金理财,金融服务，敬请享受! ">
+    <meta name="Keywords" content="京东理财,网上理财,基金理财,金融服务,马上有钱,理财规划,个人理财,家庭理财,第三方理财,投资理财/">
+    <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/base/1.2.0/css/base.css">
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/platform/bizCredit/1.0.0/css/creditBase.css">
+	<script src="//static.360buyimg.com/finance/common/lib/jquery/1.8.3/jquery.js"></script>
+    <script src="/static/js/jquery.datetimepicker.full.js"></script>
+    <script type="text/javascript" src="/static/js/template.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/js/creditTool.js" charset="utf-8"></script>
+	 <script src="/static/js/base.js"></script>
+	<script src="//static.360buyimg.com/finance/base/biz/1.0.0/js/base.js"></script>
+	<script src="//static.360buyimg.com/finance/??common/lib/raphael/2.1.2/raphael.js"></script>
+	<script src="/static/js/proToolsCircle.js"></script>
+    <script type="text/javascript">
+        var contextPath='/static';
+    </script>
+    <link rel="stylesheet" href="/static/css/wen.css"/>
+</head>
+<body>
+    <div class="common-body-container">
+<script type="text/javascript" src="/static/js/header.js" charset="utf-8"></script>
+<div class="header-area shadow-header">
+    <div class="header-main w clearfix">
+        <div class="logo-box">
+        	<a href="/static/index" class="back-homePage">
+            	<span class="jdjr-logo"></span>
+            </a>
+        </div>
+        <div class="header-nav">
+            <ul class="clearfix index">
+                <!-- 头部菜单begin -->
+                <li id="index"  class="nav-list">
+                    <a href="/static/index" class="nav-text">首页</a>
+                </li>
+                <li id="service" class="nav-list ">
+                    <a href="/static/service/todo?type=CREDIT_SERVICE" target="navTab" class="nav-text">信用服务</a>
+                </li>
+                <li id="data" class="nav-list ">
+                    <a href="/static/service/todo?type=DATA_SERVICE" target="navTab" class="nav-text">数据服务</a>
+                </li>
+                <li id="featured" class="nav-list ">
+                    <a href="javascript:;" class="nav-text">特色产品</a>
+                    <div class="sub-pro-link">
+                        <span>特色产品</span>
+                        <ul class="sub-nav-ul">
+                            <li class="sub-nav-list ">
+                                <a href="/static/user/vipcenter/todo" target="navTab">蓝鲸灵</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/user/mini/todo" target="navTab">Mini尽调</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/opinion/todo" target="navTab">企业舆情</a>
+                            </li>
+                            <li class="sub-nav-list ">
+                                <a href="/static/graph/todo" target="navTab">企业图谱</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="report" class="nav-list ">
+                    <a  href="/static/report/todo"  target="navTab" class="nav-text">信用报告</a>
+                </li>
+                <li id="shop" class="nav-list ">
+                    <a  href="/static/shop" class="nav-text">模型商城</a>
+                </li>
+                <li id="help" class="nav-list ">
+                    <a  href="/static/help/center" class="nav-text">帮助中心</a>
+                </li>
+                <!-- 头部菜单end -->
+
+                <li class="nav-list">
+                    <div class="login-area">
+                        <div class="not-login" >
+                            <a target="_blank" href="javascript:;" id="login-credit">登录</a><i class="line"></i><a target="_blank" href="https://biz.jd.com/register/toEnterpriseRegister.do">注册</a>
+                        </div>
+                        <div class="had-login" style="display:none;">
+                            <div class="user-pic-area">
+                                <img src="//static.360buyimg.com/finance/platform/bizCredit/1.0.0/images/user-int.png" alt="">
+                    
+                                <div class="wrap"></div>
+                            </div>
+                            <div class="select-page-area">
+                                <ul class="select-page-ul">
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/index" >
+                                            <div class="cz-box"><i class="base-icon icon11"></i>用户中心</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/contract" >
+                                            <div class="cz-box"><i class="base-icon icon12"></i>合同管理</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/order" >
+                                            <div class="cz-box"><i class="base-icon icon13"></i>我的订单</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/product" >
+                                            <div class="cz-box"><i class="base-icon icon17"></i>产品购买中心</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="/static/user/console/account" >
+                                            <div class="cz-box"><i class="base-icon icon15"></i>账号设置</div>
+                                        </a>
+                                    </li>
+                                    <li class="select-page-list">
+                                        <a href="//biz.jd.com/login/toLogout.do?return=https://icredit.jd.com/index">
+                                            <div class="cz-box"><i class="base-icon icon16"></i>退出</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <div class="products-server-center clearfix">
+<div class="pro-server-left">
+    <div class="lists-box">
+        <h3 class="buy-pro-head open">
+            <span class="h-name ls0">蓝鲸交易征信</span>
+        </h3>
+        <div class="move-box">
+            <ul class="buy-ul">
+                <li class="buy-list">
+                    <a href="/welink/analysis/index">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-qyfx"></i>
+                        </span>
+                        <span>企业分析</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/reliability">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-kxd"></i>
+                        </span>
+                        <span>数据可信度</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/indicator">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-zb"></i>
+                        </span>
+                        <span>经营指标</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+                <li class="buy-list">
+                    <a href="/welink/risk">
+                        <span class="pro-icons-box">
+                            <i class="pro-icons b-wl-yj"></i>
+                        </span>
+                        <span>风控预警</span>
+                        <div class="link-d"></div>
+                        <div class="blue-d"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>            <div class="pro-server-right">
+                <div class="server-infor-box">
+                    <div class="server-infor-con">
+                        <div class="server-search-area">
+                            <div class="sample-title clearfix">
+                                <h2><a href="/welink/analysis/index" class="back-title">企业分析 </a>/ 总览</h2>
+                            </div>
+                            <div class="sample-main-con">
+                                <div class="company-name-t clearfix"><h3>sudantestAA02</h3><a href="/welink/analysis/detail/more">更多</a></div>
+                                <div class="sample-table-box">
+                                    <table class="four-transverse-table">
+                                        <colgroup>
+                                            <col width="20%"/>
+                                            <col width="30%"/>
+                                            <col width="20%"/>
+                                            <col width="30%"/>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <td class="t-head">统一社会信用代码</td>
+                                            <td></td>
+                                            <td class="t-head">工商注册号</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t-head">组织机构代码</td>
+                                            <td></td>
+                                            <td class="t-head">经营状态</td>
+                                            <td>开业</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t-head">法人代表</td>
+                                            <td></td>
+                                            <td class="t-head">实际控制人</td>
+                                            <td>sudantestAA02</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t-head">企业邮箱</td>
+                                            <td></td>
+                                            <td class="t-head">联系电话</td>
+                                            <td>18321497713</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t-head">联系人</td>
+                                            <td>sudantestAA02</td>
+                                            <td class="t-head">所属金融机构</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t-head">企业地址</td>
+                                            <td></td>
+                                            <td class="t-head">公司官网</td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="analysis-push-box">
+                                <ul class="clearfix">
+                                    <li class="analysis-push-list">
+                                        <a href="/welink/analysis/reliability"><div class="analysis-icon icon01"></div></a>
+                                        <h3>数据可信度分析</h3>
+                                        <p>反映ERP数据质量可信度与一致性的综合指标检验评分</p>
+                                    </li>
+                                    <li class="analysis-push-list">
+                                        <a href="/welink/analysis/insight"><div class="analysis-icon icon02"></div></a>
+                                        <h3>业务洞察</h3>
+                                        <p>1、趋势分析</p>
+                                        <p>2、业务数据（包括销售、采购、库存、客户分析、供应商分析）</p>
+                                        <p>3、财务报表（资产负债表、 利润表、 现金流量表）</p>
+                                    </li>
+                                    <li class="analysis-push-list">
+                                        <a href="/welink/analysis/uota"><div class="analysis-icon icon03"></div></a>
+                                        <h3>指标分析</h3>
+                                        <p>展示23种业务指标，18种财务指标的分析结果</p>
+                                    </li>
+                                    <li class="analysis-push-list">
+                                        <div class="analysis-icon icon04"></div>
+                                        <h3>明细数据</h3>
+                                        <p><a href="/welink/analysis/saleorders">销售订单</a>、 采购订单、 采购合同、 采购入库单、 采购退货单、采购发票、 销售出库单、 销售退货单、 销售发票、 付款单、收款单、 库存、 应收款、 收款、 应付款、 付款、 预付款、预收款。</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cut-area"></div>
+        </div>
+        <div class="footer-fix"></div>
+    </div>
+<!--footer-->
+<div class="footer-area clearfix">
+    <div class="w">
+        <span class="copyright-area">上海恒先君展企业信用征信服务有限公司 <i class="line"></i>Copyright © 2017 京东金融版权所有</span>
+        <span class="about-us">服务热线：400 0888816 <i class="line"></i>客服邮箱：credit@jd.com <i class="line"></i>工作时间：周一至周五（9:00-18:00）</span>
+    </div>
+</div>
+<!--footer end-->
+<div class="sidebar-area">
+    <ul class="sidebar-ul">
+        <li class="sidebar-list">
+            <a href="https://chat.jd.com/jd/chat?entry=jr_web_qyzx" target="_blank">
+                <div class="dd-fond"></div>
+                <span class="dd-back">在线客服</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--container end--><script src="/static/js/wenli.js"></script>
+</body>
+</html>
