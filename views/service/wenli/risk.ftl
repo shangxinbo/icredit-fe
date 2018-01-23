@@ -104,7 +104,7 @@
                                                     <tr>
                                                         <td class="pl20">T1502-0001</td>
                                                         <td>
-                                                            <a href="" class="project-name" title="sudantestAA02">sudantestAA02</a>
+                                                            <a href="" class="project-name" title="sudantestAA02"></a>
                                                         </td>
                                                         <td>自动</td>
                                                         <td>
